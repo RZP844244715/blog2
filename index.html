@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./main.css">
+    <script src="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="TopNarBar clearfix">
+    <div class="TopNarBar">
+        <div class="TopNarBar-inner clearfix">
     <a class="logo" href="#" alt="logo">
         <span class="rs">RS</span><span class="card">card</span>
     </a>
@@ -21,40 +32,56 @@
             </ul>
         </nav>
     </div>
-    <div class="banner" style="background-image: url(#)"></div>
-    <div class="card">
-        <div class="picture">
-            <img src="#" alt="头像">
-        </div>
-            <div class="text">
-                <span class="welcome">Hello</span>
-                <h1>饶志鹏</h1>
-                <p>前端开发工程师</p>
-                <hr>
-                <dl>
-                    <dd>年龄</dd>
-                    <dt>21</dt>
-                </dl>
-                <dl>
-                    <dd>所在城市</dd>
-                    <dt>深圳</dt>
-                </dl>
-                <dl>
-                    <dd>毕业学校</dd>
-                    <dt>江西现代学院</dt>
-                </dl>
-                <dl>
-                    <dd>电话</dd>
-                    <dt>13576704719</dt>
-                </dl>
+    </div> 
+    <div class="banner" style="background-image: url(./image/bj.jpg)">
+        <div class="mask"></div>
+    </div>
+    <div class="userCard ">
+        <div class="picAndText clearfix">
+            <div class="picture">
+                <img src="./image/avatar.jpg"  alt="头像">
             </div>
-            <footer class="">
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
+                <div class="text">
+                    <span class="welcome">Hello<span class="triangle"></span></span>
+                    <h1>饶志鹏</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dd>年龄</dd>
+                        <dt>21</dt>
+                    </dl>
+                    <dl>
+                        <dd>所在城市</dd>
+                        <dt>深圳</dt>
+                    </dl>
+                    <dl>
+                        <dd>毕业学校</dd>
+                        <dt>江西现代职业技术学院</dt>
+                    </dl>
+                    <dl>
+                        <dd>电话</dd>
+                        <dt>13576704719</dt>
+                    </dl>
+                </div>
+        </div>
+            <footer class="media">
+                <a href="">
+                        <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-yanzheng-jianshu"></use>
+                            </svg>
+                </a>
+                <a href="">
+
+                </a>
+                <a href="">
+
+                </a>
+                <a href="">
+
+                </a>
+                <a href="">
+
+                </a>
             </footer>
         </div>
         <a class="button" href="#">下载 PDF 简历</a>

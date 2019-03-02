@@ -6,14 +6,23 @@
 a{
     text-decoration: none;
 }
-body{
-    color: white;
+*{
+    /* color: white; */
     margin:0;
     padding: 0;
-    background:black;
+    /* background:black; */
+}
+hr{
+    border:none;
+    height: 0;
+    border-top: 1px solid #dedede;
 }
 .TopNarBar{
-    margin:10px 10px ;
+    position: fixed;
+    width: 100%;
+}
+.TopNarBar .TopNarBar-inner{
+    padding:2px 16px ;
 }
 .TopNarBar a{
     float: left;
@@ -21,7 +30,8 @@ body{
 .TopNarBar .logo{
     font-size: 24px;
     font-family: 'Georgia';
-    margin: 18px 18px; 
+    padding:12px 0;
+    
 }
 .TopNarBar .logo .rs{
     color: #e6686a;
@@ -32,6 +42,7 @@ body{
 }
 .TopNarBar nav{
    float:right; 
+   margin:15px 0;
 }
 .TopNarBar nav ul li{
     float: left;
@@ -44,12 +55,77 @@ body{
     margin-left: 18px;
     margin-right: 18px;
     border-bottom: 3px solid transparent; 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     display: block;
     font-size: 12px;
 
 }
 .TopNarBar nav ul li a:hover{
     border-bottom: 3px solid #f40;
+}
+.banner{
+    height: 515px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner .mask{
+    height: 515px;
+    background-color:rgb(0,0,0,0.7);
+}
+.userCard{
+   border:1px solid red;
+    max-width: 940px;
+    margin:0 auto;
+    /* padding:50px; */
+}
+.userCard .picAndText{
+    padding:50px;
+}
+.userCard .welcome{
+    background: #E6686A;
+    padding:4px 12px;
+    position: relative;
+    color: white;
+    display: inline-block;
+}
+.userCard .triangle{
+    border:10px solid transparent;
+    width:0;
+    border-top-width: 0;
+    border-left-color: #E6686A;
+    position: absolute; 
+    top:100%;
+    left:3px;
+}
+.userCard .picture{
+    float: left;
+}
+
+.userCard .text{
+    float: left;
+    margin-left: 80px;
+    width: 460px;
+}
+.userCard .text h1{
+    padding-top: 34px;
+}
+.userCard .text hr{
+    margin:20px 0;
+}
+.userCard dl dd,
+.userCard dl dt{
+    float: left;
+    margin: 5px 0;
+}
+.userCard dl dd{
+    width:30%;
+    font-weight: bold;
+}
+.userCard dl dt{
+    width:70%;
+    color:#9da0a7;
+}
+.userCard footer.media{
+    background: #E6686A;
 }
