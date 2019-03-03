@@ -37,6 +37,7 @@
     <div class="banner" style="background-image: url(./image/bj.jpg)">
         <div class="mask"></div>
     </div>
+    <main>
     <div class="userCard ">
         <div class="picAndText clearfix">
             <div class="picture">
@@ -88,37 +89,89 @@
                 </a>
             </footer>
         </div>
-        <a class="button" href="#">下载 PDF 简历</a>
-        <P>
-            前端工程师<br>
+        <div class="button-warpper">
+           <a class="downloadResume" href="#">下载 PDF 简历</a>
+        </div>
+        <p class="selfIntroduction">
+            前端大牛<br>
             自学前端一年
         </P>
-
-        <section>
+    </main>
+        <section class="skills clearfix">
             <h2>技能</h2>
-            <ol>
-                <li>HTML5 & CSS3</li>
-                <li>javascript</li>
-                <li>jquery</li>
-                <li>vue</li>
-                <li>react</li>
-                <li>http</li>
+                <ol class="clearfix">
+                <li>
+                    <h3> html5 &amp; css3</h3>
+                   <div class="progressBar">
+                       <div class="progress"></div>
+                   </div>
+                </li>
+                <li>
+                    <h3>javascript</h3>
+                   <div class="progressBar">
+                       <div class="progress"></div>
+                   </div>
+                </li>
+                <li>
+                    <h3>jquery</h3>
+                       <div class="progressBar">
+                           <div class="progress"></div>
+                       </div>
+                    </li>
+                <li>
+                    <h3>vue.js</h3>
+                   <div class="progressBar">
+                       <div class="progress"></div>
+                   </div>
+                </li>
+                <li>
+                    <h3>react.js</h3>
+                   <div class="progressBar">
+                       <div class="progress"></div>
+                   </div>
+                </li>
+                <li>
+                     <h3>http</h3>
+                       <div class="progressBar">
+                           <div class="progress"></div>
+                       </div>
+                </li>
             </ol>
         </section>
 
-        <section>
+        <section class="portfolio">
             <h2>作品集</h2>
-            <var>
-                <ol>
-                    <li>所有</li>
-                    <li>框架</li>
-                    <li>原生js & css</li>
+            <nav>
+                <ol class="clearfix">
+                    <li id="portfolio1">所有</li>
+                    <li id="portfolio2">框架</li>
+                    <li id="portfolio3">原生js & css</li>
                 </ol>
-            </var>
+                <div id="portfolioBar" class="bar state-1">
+                    <div class="bar-inner"></div>
+                </div>
+            </nav>
+            <script>
+                portfolio1.onclick = function(){
+                    portfolioBar.className = 'bar state-1'
+                }
+                portfolio2.onclick = function(){
+                    portfolioBar.className = 'bar state-2'
+                }
+                portfolio3.onclick = function(){
+                    portfolioBar.className = 'bar state-3'
+                }
+            </script>
             <div class="works">
-                <div class="big"></div>
-                <div class="small"></div>
-                <div class="small"></div>
+                <div class="big" style="top:0; left:0;">
+                    <img src="./image/1.jpg" alt="作品1">
+                </div>
+                <div class="small" style="top:0; left:645px;">
+                    <img src="./image/2.jpg" alt="作品2">
+                </div>
+                <div class="small" style="top:312px; left:645px;">
+                    <img src="./image/3.jpg" alt="作品3">
+                </div>
             </div>
         </section>
 </body>
